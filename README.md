@@ -27,7 +27,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|message||text|null: false|
+|message||text|
 |image||string|
 |user_id|integer|null: false, foreign_key: true, unique: true|
 |group_id|integer|null: false, foreign_key: true, unique: true|
@@ -40,8 +40,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true, unique: true|
-|user_name|string|null: false|
+|name|string|null: false|
 |e_mail|string|null: false,　unique: true|
 |passward|string|null: false|
 
@@ -54,8 +53,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|group_id|integer|null: false, foreign_key: true, unique: true|
-|group_name|string|null: false|
+|name|string|null: false|
 
 ### Association
 - has_many :messages
