@@ -68,11 +68,11 @@
         padding: 0px 20px;
         padding-top: 20px;
 
-        .groups-list-top{
+        &-top{
           height: 20px;
           background-color: #2f3e51;
         }
-        .groups-list-center{
+        &-center{
           height: 15px;
           background-color: #2f3e51;
           margin-bottom: 5px;
@@ -80,7 +80,7 @@
           font-weight: bold;
           color: #ffffff;
         }
-        .groups-list-bottom{
+        &-bottom{
           height: 11px;
           background-color: #2f3e51;
           font-size: 11px;
@@ -194,7 +194,7 @@
               .fas{
                 position: absolute;
                 color: #253141;
-                right: 30px;
+                right: 10px;
                 font-size: 20px;
                 bottom: -13px;
               }
