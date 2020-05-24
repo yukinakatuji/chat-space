@@ -1,0 +1,27 @@
+.chat-main
+  .groups-info
+    .groups-user
+      .groups-user-box
+        .groups-user-top
+          test
+        .groups-user-bottom
+          Menber : name
+      .groups-user-edit
+        Edit
+  .messages-list
+    .messages-index
+      .messages-index-user
+        user
+      .messages-index-time
+        2020/05/23(sat) 07:30:00
+    .messages-index-content
+      おはよう！
+  .form
+    .form-content
+      type a message
+    .side-icon-image
+      %label{class: "input-box__image"}
+        = icon('fas', 'image')
+        %input{type: "file", class: "input-box_image"}
+    .send-content
+      Send
