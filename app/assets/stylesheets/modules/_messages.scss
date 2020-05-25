@@ -7,7 +7,7 @@
   .side-bar {
     width: 300px;
     
-     .side-header {
+    .side-header {
       height: 100px;
       background-color: #253141;
       display: flex;
@@ -58,19 +58,18 @@
       }
     }
 
-  .side-group {
-    height: calc(100vh - 100px);
-    background-color:#2f3e51;
-    
+    .side-group {
+      height: calc(100vh - 100px);
+      background-color:#2f3e51;
+      padding: 20px 20px 0px;
       .groups-list{
         height: 91px;
         background-color: #2f3e51;
         padding: 0px 20px;
         padding-top: 20px;
-
+        
         &-top{
-          height: 20px;
-          background-color: #2f3e51;
+          padding-bottom: 15px;;
         }
         &-center{
           height: 15px;
