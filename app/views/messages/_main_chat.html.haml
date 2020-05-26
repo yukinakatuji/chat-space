@@ -16,12 +16,12 @@
         2020/05/23(sat) 07:30:00
     .messages-index-content
       おはよう！
-  .form
-    .form-content
-      type a message
-    .side-icon-image
-      %label{class: "input-box__image"}
-        = icon('fas', 'image')
-        %input{type: "file", class: "input-box_image"}
-    .send-content
-      Send
+  .chat-main__form
+    = form_for [@group, @message] do |f|
+      .chat-main__form__table
+        = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+        = f.label :image, class: "choose-image" do
+          = icon('far', 'image', class: 'icon')
+          =f.file_field :image, class: 'hidden'
+      .chat-main__form__send-btn
+        = f.submit 'Send', class: 'form__submit'

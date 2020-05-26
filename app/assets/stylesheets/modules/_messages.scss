@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 .wrapper{
   display: flex;
 
@@ -167,48 +168,55 @@
         margin-left: 40px;
       }
     }
-    .form{
+    &__form {
       height: 90px;
       background-color: #d2d2d2;
       display: flex;
-      align-items: center;
-      width: 100%;
-      padding: 0 40px;
-
-      &-content{
-        height: 50px;
-        background-color: #ffffff;
-        font-size: 15px;
-        line-height: 50px;
-        color: #d2d2d2;
+      padding: 20px;
+      .new_message{
+        display: flex;
         width: 100%;
-        padding-left: 10px;
-      }
-        .side-icon-image{
-          position: relative;
 
-            .input-box_image{
+        .chat-main__form__table {
+          height: 50px;
+          width: 100%;
+          background-color: #ffffff;
+          font-size: 15px;
+          line-height: 50px;
+          color: #d2d2d2;
+          position: relative;
+          display: flex;
+          align-items: center;
+
+          .form__message{
+            width: 100%;
+            height: 100%;
+            padding-left: 5px;
+          }
+          .choose-image {
+            position: absolute;
+            right: 15px;
+            color: #253141;
+            font-size: 20px;
+            display: inline-block;
+
+            .hidden {
               display: none;
             }
-              .fas{
-                position: absolute;
-                color: #253141;
-                right: 10px;
-                font-size: 20px;
-                bottom: -13px;
-              }
+          }
         }
-
-    .send-content{
-      height: 50px;
-      width: 100px;
-      font-size: 20px;
-      text-align: center;
-      line-height: 50px;
-      color: white;
-      background-color: #38aef0;
-      margin-left: 15px;
+        .form__submit {
+          height: 50px;
+          width: 100px;
+          font-size: 20px;
+          text-align: center;
+          line-height: 50px;
+          color: white;
+          background-color: #38aef0;
+          margin-right: 15px;
+          margin-left: 15px;
+        }
+      }
     }
-   }
   }
 }
