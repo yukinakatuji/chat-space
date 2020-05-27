@@ -8,14 +8,9 @@
           Menber : name
       .groups-user-edit
         Edit
-  .messages-list
-    .messages-index
-      .messages-index-user
-        user
-      .messages-index-time
-        2020/05/23(sat) 07:30:00
-    .messages-index-content
-      おはよう！
+  .messages
+    = render @messages
+
   .chat-main__form
     = form_for [@group, @message] do |f|
       .chat-main__form__table
