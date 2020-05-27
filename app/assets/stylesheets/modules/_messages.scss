@@ -137,22 +137,28 @@
       }
     }
 
-    .messages-list{
+    .messages {
       height: calc(100vh - 190px);
+      overflow: scroll;
+    }
+
+    .message{
       background-color:#fafafa;
 
-      .messages-index{
+      .upper-message{
         display: flex;
+        justify-self: start;
         margin-left: 40px;
+        box-sizing: border-box;
 
-        .messages-index-user{
+        .upper-message__user-name{
           padding-top: 35px;
           background-color: #fafafa;
           font-size: 16px;
           font-weight: bold;
           color: black;
         }
-        .messages-index-time{
+        .upper-message__date{
           padding-top: 35px;
           margin-left: 5px;
           background-color: #fafafa;
@@ -160,12 +166,20 @@
           color: black;
         }
       }
-      .messages-index-content{
-        padding-top: 12px;
-        background-color: #fafafa;
-        font-size: 14px;
-        color: #434A54;
-        margin-left: 40px;
+      .lower-message{
+
+          margin-left: 40px;
+          padding-top: 12px;
+          background-color: #fafafa;
+          font-size: 14px;
+          color: #434A54;
+
+        .lower-message__image{
+          font-size: 14px;
+          color: #434A54;
+          width: calc(100vw- 300px);
+          border: 0px;
+        }
       }
     }
     &__form {
