@@ -3,9 +3,10 @@
     .groups-user
       .groups-user-box
         .groups-user-top
-          test
+          = @group.name
         .groups-user-bottom
-          Menber : name
+          - @group.users.each do |user|
+            =user.name 
       .groups-user-edit
         Edit
   .messages
