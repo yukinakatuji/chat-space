@@ -51,18 +51,21 @@ $('#new_message').on('submit', function(e){
    processData: false,
    contentType: false
  })
-  .done(function(data){
+
+  .done(function(data) {
     var html = buildHTML(data);
     $('.messages').append(html);
     $('form')[0].reset();
     $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
-    $(".form__submit").removeAttr("disabled");
   })
   
   .fail(function() {
     alert("メッセージ送信に失敗しました");
+  })
+
+  .always(function(){
     $(".form__submit").removeAttr("disabled");
-});
+  });
 
 })
 });
