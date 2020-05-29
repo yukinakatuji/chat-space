@@ -27,8 +27,6 @@ class GroupsController < ApplicationController
       redirect_to group_messages_path(@group), notice: 'グループを更新しました'
     else
       render :edit
-    # else
-    #   render :groups_messages
     end
   end
 
