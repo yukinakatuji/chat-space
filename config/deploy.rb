@@ -16,7 +16,7 @@ set :rbenv_ruby, '2.5.1' #カリキュラム通りに進めた場合、2.5.1か2
 
 # どの公開鍵を利用してデプロイするか
 set :ssh_options, auth_methods: ['publickey'],
-                  keys: ['8f4f4d776f11a8675eea91639a4461a27d31f8bb7764afcd55840a0e60fd5a597c264b842c781cfef9bb7c1c52beff684c88123eb182baee6dc9132fa409b9e7'] 
+                  keys: ['~/.ssh/snowdrop.pem'] 
 
 # プロセス番号を記載したファイルの場所
 set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
