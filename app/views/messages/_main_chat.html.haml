@@ -5,6 +5,7 @@
         .groups-user-top
           = @group.name
         .groups-user-bottom
+          Member:
           - @group.users.each do |user|
             =user.name 
       .groups-user-edit

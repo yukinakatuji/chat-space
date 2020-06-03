@@ -98,6 +98,7 @@
     .groups-info{
       height: 100px;
       background-color: #ffffff;
+      border-bottom: solid 1px #eee;
 
       .groups-user{
         background-color: #ffffff;
@@ -153,14 +154,14 @@
         box-sizing: border-box;
 
         .upper-message__user-name{
-          padding-top: 35px;
+          padding-top: 46px;
           background-color: #fafafa;
           font-size: 16px;
           font-weight: bold;
           color: black;
         }
         .upper-message__date{
-          padding-top: 35px;
+          padding-top: 46px;
           margin-left: 5px;
           background-color: #fafafa;
           font-size: 12px;
